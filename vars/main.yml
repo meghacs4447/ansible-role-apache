@@ -1,0 +1,5 @@
+---
+# vars file for webserver
+index_path: /var/www/html/
+username: What is your name?
+

@@ -1,0 +1,11 @@
+# tasks file for webserver
+---
+   - name: Installing apache
+     apt: name=apache2 state=present update_cache=yes
+
+   - name: start apache
+     service: name=apache2 enabled=yes state=started
+
+   - name: copy index file
+     template: src=templates/index.html dest={{ index_path }}/index.html
+
